@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="input-buku">
+            <h2>Masukkan Buku Baru</h2>
+            <form id="inputBuku">
+                <div class="input">
+                    <label for="inputJudul">Judul Buku</label>
+                    <input id="inputJudul" type="text" required placeholder="Masukkan Buku">
+                </div>
+                <div class="input">
+                    <label for="inputPenulis">Penulis Buku</label>
+                    <input id="inputPenulis" type="text" required placeholder="Masukkan Penulis">
+                </div>
+                <div class="input">
+                    <label for="inputTahun">Tahun Terbit Buku</label>
+                    <input id="inputTahun" type="number" required placeholder="Masukkan Tahun Terbit">
+                </div>
+                <div class="input_inline">
+                    <label for="inputBukuSelesai" id="inputBukuSelesaiLabel">selesai dibaca</label>
+                    <input id="inputBukuSelesai" type="checkbox">
+                </div>
+                <button id="submitBuku">Masukkan Buku ke Rak <span id="tipeBuku"><strong>Belum
+                            Dibaca</strong></span></button>
+                <button id="editBuku">Edit Buku dan Masukkan ke Rak <span id="editTipeBuku"><strong>Belum
+                            Dibaca</strong></strong></span></button>
+            </form>
+        </section>
+
+        <section class="output-buku">
+            <h2>Belum selesai dibaca</h2>
+            <div id="listBelum" class="listBuku">
+            </div>
+        </section>
+
+        <section class="output-buku">
+            <h2>Selesai Dibaca</h2>
+            <div id="listSudah" class="listBuku">
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/webStorage.js"></script>
+</body>
+
+</html>
