@@ -11,7 +11,7 @@ body {
 body,
 input,
 button {
-    font-family: 'Sofia', sans-serif;
+    font-family: sans-serif;
 }
 
 input,
@@ -24,6 +24,10 @@ main {
     width: 80%;
     margin: 30px auto;
     padding: 16px;
+}
+
+h2 {
+    font-family: 'sofia';
 }
 
 .input-buku {
